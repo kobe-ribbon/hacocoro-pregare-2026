@@ -257,6 +257,53 @@
     letter-spacing: 0.04em;
   }
 
+  /* ===== Lineup grid (既存ライン紹介) ===== */
+  .lineup-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 18px 0 8px;
+  }
+  .lineup-grid figure {
+    margin: 0;
+    border: 1px solid var(--rule);
+    background: #fff;
+  }
+  .lineup-grid figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lineup-grid figcaption {
+    padding: 10px 12px 12px;
+    font-family: 'Noto Serif JP', "Hiragino Mincho ProN", serif;
+    font-size: 13.5px;
+    letter-spacing: 0.06em;
+    color: var(--ink);
+    text-align: center;
+  }
+  .lineup-grid figcaption .yomi {
+    display: block;
+    font-size: 11px;
+    color: var(--ink-mute);
+    margin-top: 3px;
+    letter-spacing: 0.16em;
+  }
+  .lineup-source {
+    margin: 12px 0 0;
+    font-size: 10.5px;
+    color: var(--ink-mute);
+    letter-spacing: 0.04em;
+    text-align: right;
+  }
+  .lineup-source a { color: var(--ink-mute); }
+  @media (max-width: 520px) {
+    .lineup-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .lineup-grid figcaption { font-size: 12.5px; padding: 8px 8px 10px; }
+    .lineup-grid figcaption .yomi { font-size: 10.5px; }
+  }
+
   /* ===== Footer ===== */
   footer {
     margin-top: 64px;
@@ -284,7 +331,7 @@
   <div class="notice">
     本商品は <strong>2026 年 7 月発売予定</strong> です。<br>
     現在、神戸リボン LINE 公式アカウントにて <strong>ご予約のみ承っております</strong>。<br>
-    発売開始次第、ご予約順に手配・出荷いたします。
+    ご予約いただいたお客様には、発売開始時点で<strong>改めてご連絡</strong>を差し上げます。
   </div>
 
   <!-- Hero -->
@@ -375,8 +422,30 @@
       <li><strong>すべて日本製</strong> — 設計から成形・仕上げまで国内工場で一貫生産。</li>
     </ul>
     <p style="margin-top:18px;">
-      プロフーモ（香水瓶型）、フェリーチェ＆キュート、イルクオーレ、各種花器など、
-      Hacocoro の既存ラインも神戸リボンにて常時お取り扱いしております。
+      下記のような既存ラインも、神戸リボンにて常時お取り扱いしております。
+      お見積りやご相談は LINE までお気軽にお声がけください。
+    </p>
+
+    <div class="lineup-grid">
+      <figure>
+        <img src="lineup-profumo.jpg" alt="Profumo / プロフーモ — 香水瓶型アクリルケース">
+        <figcaption>Profumo<span class="yomi">プロフーモ — 香水瓶型</span></figcaption>
+      </figure>
+      <figure>
+        <img src="lineup-profumo-mio.jpg" alt="Profumo Mio / プロフーモ ミオ — 香水瓶型 小さなサイズ">
+        <figcaption>Profumo Mio<span class="yomi">プロフーモ ミオ — 小型 香水瓶型</span></figcaption>
+      </figure>
+      <figure>
+        <img src="lineup-felice.jpg" alt="Felice / フェリーチェ — 六角形フラワーケース">
+        <figcaption>Felice<span class="yomi">フェリーチェ — 六角形花器</span></figcaption>
+      </figure>
+      <figure>
+        <img src="lineup-ilcuore.jpg" alt="il Cuore / イル クオーレ — ハート型ギフトケース">
+        <figcaption>il Cuore<span class="yomi">イル クオーレ — ハート型</span></figcaption>
+      </figure>
+    </div>
+    <p class="lineup-source">
+      画像出典：肥田電器株式会社 Hacocoro 総合カタログ Vol.7（<a href="https://hidadenki.co.jp/productnews/39478/" target="_blank" rel="noopener">公式</a>）
     </p>
   </section>
 
@@ -385,7 +454,7 @@
     <h3>ご予約受付中</h3>
     <p>下記ボタンから神戸リボン公式 LINE が起動し、<br>品番が入力された状態でメッセージが開きます。<br>数量をご入力のうえご送信ください。</p>
     <a class="line-btn" href="https://line.me/R/oaMessage/@kobe-ribbon/?Hacocoro%20%E3%83%97%E3%83%AC%E3%82%AC%E3%83%BC%E3%83%AC%20HC109CL%0A%E6%95%B0%E9%87%8F%EF%BC%9A" target="_blank" rel="noopener" title="LINE で発注メッセージを作成">LINE で予約する</a>
-    <p class="cta-note">※ 発売開始（2026 年 7 月予定）次第、順次出荷いたします。</p>
+    <p class="cta-note">※ ご予約いただいたお客様には、発売開始（2026 年 7 月予定）時点で改めてご連絡いたします。</p>
   </div>
 
   <footer>
