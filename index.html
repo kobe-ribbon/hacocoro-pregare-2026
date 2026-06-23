@@ -395,6 +395,43 @@
     .spec-mini .card { padding: 14px; }
   }
 
+  /* ===== Price update notice ===== */
+  .price-update {
+    margin-top: 56px;
+    padding: 24px 22px 22px;
+    border: 1px solid var(--rule);
+    background: var(--paper-soft);
+  }
+  .price-update h2 {
+    font-family: 'Noto Serif JP', "Hiragino Mincho ProN", serif;
+    font-size: 17px;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    margin: 0 0 10px;
+  }
+  .price-update p { font-size: 14px; color: var(--ink-soft); margin: 0 0 12px; }
+  .price-update .pdf-link {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13.5px;
+    letter-spacing: 0.10em;
+    background: #fff;
+    transition: background 0.2s, color 0.2s;
+  }
+  .price-update .pdf-link:hover {
+    background: var(--ink);
+    color: #fff;
+  }
+  .price-update .all-suppliers {
+    font-size: 12.5px;
+    color: var(--ink-mute);
+    margin-top: 14px;
+  }
+  .price-update .all-suppliers a { color: var(--ink-soft); }
+
   /* ===== Footer ===== */
   footer {
     margin-top: 64px;
@@ -592,6 +629,28 @@
     </div>
     <p class="lineup-source">
       画像出典：肥田電器株式会社 Hacocoro 総合カタログ Vol.7（<a href="https://hidadenki.co.jp/productnews/39478/" target="_blank" rel="noopener">公式</a>）
+    </p>
+  </section>
+
+  <!-- 2026/8/1 価格改定のお知らせ -->
+  <section class="price-update">
+    <h2>2026 年 8 月 1 日 価格改定のお知らせ</h2>
+    <p>
+      肥田電器株式会社より、<strong>2026 年 8 月 1 日ご出荷分</strong>から
+      Hacocoro 既存商品 <strong>36 品番</strong>の希望小売価格を改定する旨のご案内をいただいております。
+    </p>
+    <ul class="feature-list">
+      <li><strong>改定実施日</strong> — 2026 年 8 月 1 日（ご出荷分より新価格適用）</li>
+      <li><strong>主な対象</strong> — マリエッタ／カミーチャ／プロフーモ シリーズ／ベリッシモ／フェリーチェキュート／イルクオーレ／小型花器／長方形花器 ほか 36 品番</li>
+      <li><strong>改定幅</strong> — 概ね 7〜10% 程度の値上げ</li>
+      <li><strong>プレガーレ（HC109CL）は今回の改定対象外</strong>です（新商品のため、現行価格 ¥1,360 / 税込 ¥1,496 のままご予約承ります）</li>
+    </ul>
+    <p>対象品番ごとの旧価格・新価格はメーカー作成の改定一覧 PDF をご覧ください。</p>
+    <p style="text-align:center; margin: 18px 0 0;">
+      <a class="pdf-link" href="https://kobe-ribbon.github.io/kobe-ribbon-supplier-price-updates-2026summer/pdfs/hda_20260801_pricelist.pdf" target="_blank" rel="noopener">肥田電器 価格改定対象一覧（PDF）</a>
+    </p>
+    <p class="all-suppliers">
+      主要メーカー 9 社の改定情報をまとめた告知ページ：<a href="https://kobe-ribbon.github.io/kobe-ribbon-supplier-price-updates-2026summer/" target="_blank" rel="noopener">主要メーカー 価格改定一覧 2026 年夏</a>
     </p>
   </section>
 
