@@ -257,73 +257,6 @@
     letter-spacing: 0.04em;
   }
 
-  /* ===== Leaflet PDF link ===== */
-  .leaflet-links {
-    display: flex;
-    gap: 14px;
-    margin: 18px 0 0;
-    flex-wrap: wrap;
-  }
-  .leaflet-links a {
-    flex: 1 1 220px;
-    display: block;
-    border: 1px solid var(--rule);
-    padding: 6px;
-    text-decoration: none;
-    background: #fff;
-    transition: border-color 0.2s;
-  }
-  .leaflet-links a:hover { border-color: var(--ink); }
-  .leaflet-links img { display: block; width: 100%; height: auto; }
-  .leaflet-links .cap {
-    display: block;
-    margin: 8px 4px 4px;
-    font-size: 12px;
-    color: var(--ink-soft);
-    letter-spacing: 0.04em;
-    text-align: center;
-  }
-
-  /* ===== Also (関連記事) ===== */
-  .also a {
-    display: flex;
-    gap: 14px;
-    align-items: center;
-    padding: 14px;
-    border: 1px solid var(--rule);
-    background: #fff;
-    text-decoration: none;
-    color: var(--ink) !important;
-    transition: border-color 0.2s;
-  }
-  .also a:hover { border-color: var(--ink); }
-  .also .thumb {
-    flex-shrink: 0;
-    width: 80px;
-    height: 80px;
-    background: var(--paper-soft);
-    overflow: hidden;
-  }
-  .also .thumb img { width: 100%; height: 100%; object-fit: cover; }
-  .also .body .label {
-    display: block;
-    font-size: 11px;
-    color: var(--ink-mute);
-    letter-spacing: 0.16em;
-    margin-bottom: 4px;
-  }
-  .also .body .title {
-    font-family: 'Noto Serif JP', "Hiragino Mincho ProN", serif;
-    font-size: 14.5px;
-    font-weight: 500;
-    line-height: 1.5;
-    margin: 0 0 4px;
-  }
-  .also .body .date {
-    font-size: 12px;
-    color: var(--ink-mute);
-  }
-
   /* ===== Footer ===== */
   footer {
     margin-top: 64px;
@@ -402,7 +335,8 @@
       <tr><th>品番</th><td>HC109CL</td></tr>
       <tr><th>希望小売価格</th><td><span class="price">¥1,760</span><span class="tax">税込 ¥1,936</span></td></tr>
       <tr><th>材質</th><td>アクリル樹脂（日本製）</td></tr>
-      <tr><th>サイズ</th><td>幅 126.6 × 奥行 126.6 × 高さ 118.2 mm</td></tr>
+      <tr><th>外寸サイズ</th><td>幅 126.6 × 奥行 126.6 × 高さ 118.2 mm</td></tr>
+      <tr><th>ドーム内寸</th><td>φ 約 6.5 cm</td></tr>
       <tr><th>重量</th><td>約 98 g</td></tr>
       <tr><th>カラー</th><td>クリア</td></tr>
       <tr><th>JAN コード</th><td>4573323021510</td></tr>
@@ -422,8 +356,8 @@
         <figcaption>お供えギフト仕様の例</figcaption>
       </figure>
       <figure>
-        <img src="box-open.jpg" alt="個装箱（透明窓付き）">
-        <figcaption>個装箱（透明窓付き）</figcaption>
+        <img src="box-open.jpg" alt="個装箱（くりぬき窓）">
+        <figcaption>個装箱（くりぬき窓）</figcaption>
       </figure>
     </div>
   </section>
@@ -453,35 +387,6 @@
     <a class="line-btn" href="https://line.me/R/oaMessage/@kobe-ribbon/?Hacocoro%20%E3%83%97%E3%83%AC%E3%82%AC%E3%83%BC%E3%83%AC%20HC109CL%0A%E6%95%B0%E9%87%8F%EF%BC%9A" target="_blank" rel="noopener" title="LINE で発注メッセージを作成">LINE で予約する</a>
     <p class="cta-note">※ 発売開始（2026 年 7 月予定）次第、順次出荷いたします。</p>
   </div>
-
-  <!-- 案内チラシ -->
-  <section>
-    <h2>メーカー発行 案内チラシ</h2>
-    <p>肥田電器株式会社より発行されている案内チラシ（両面）です。画像をクリックすると PDF をご覧いただけます。</p>
-    <div class="leaflet-links">
-      <a href="hacocoro-pregare-leaflet-front.pdf" target="_blank" rel="noopener">
-        <img src="leaflet-front-1.jpg" alt="案内チラシ 片面">
-        <span class="cap">片面（商品紹介）</span>
-      </a>
-      <a href="hacocoro-pregare-leaflet-back.pdf" target="_blank" rel="noopener">
-        <img src="leaflet-back-1.jpg" alt="Hacocoro 商品一覧表">
-        <span class="cap">裏面（Hacocoro 商品一覧）</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- 関連記事 -->
-  <section class="also">
-    <h2>合わせてご覧ください</h2>
-    <a href="https://www.kobe-ribbon.co.jp/12491125171254012473653811248812500124831246312473/28-2026" target="_top" rel="noopener">
-      <div class="thumb"><img src="ohchi-thumb.jpg" alt="第28回 大地農園 内見会 2026 大阪会場"></div>
-      <div class="body">
-        <span class="label">RELATED</span>
-        <p class="title">第 28 回 大地農園 内見会 2026 大阪会場</p>
-        <span class="date">2026.6.4（木）— 6.5（金）／ マイドームおおさか</span>
-      </div>
-    </a>
-  </section>
 
   <footer>
     神戸リボン
