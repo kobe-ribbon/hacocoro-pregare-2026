@@ -181,6 +181,37 @@
     .photo-grid { grid-template-columns: 1fr; }
   }
 
+  /* ===== Feature row (写真+説明) ===== */
+  .feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin: 8px 0 0;
+  }
+  .feature-row figure { margin: 0; }
+  .feature-row figure img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+  }
+  .feature-row h3 {
+    font-family: 'Noto Serif JP', "Hiragino Mincho ProN", serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin: 14px 0 6px;
+    color: var(--ink);
+  }
+  .feature-row p {
+    font-size: 13.5px;
+    line-height: 1.85;
+    margin: 0;
+    color: var(--ink-soft);
+  }
+  @media (max-width: 520px) {
+    .feature-row { grid-template-columns: 1fr; gap: 32px; }
+  }
+
   /* ===== CTA (LINE 予約受付) ===== */
   .cta {
     margin: 48px 0;
@@ -344,6 +375,23 @@
       ドームの内部にはお花のほか、フィギュアやコレクションを飾っても。
       祈りの空間にも、コレクションの飾り棚にもなじむ ── 用途を選ばない一つの「器」です。
     </p>
+  </section>
+
+  <!-- 設計の工夫 -->
+  <section>
+    <h2>設計の工夫</h2>
+    <div class="feature-row">
+      <figure>
+        <img src="separable.jpg" alt="蓮の花を象ったベースとドームを分離し、ベース単体を和菓子皿として使用している様子">
+        <h3>ベースとドームが分離</h3>
+        <p>蓮の花を象ったベース部分は、ドームから取り外して単独でもお使いいただけます。お茶席の和菓子皿や、小物を彩るトレイとしての一品使いにも。</p>
+      </figure>
+      <figure>
+        <img src="easy-removal.jpg" alt="個装箱の中に持ち手付きの紙製インナーシートが入っており、引き上げるだけで本体が取り出せる仕様">
+        <h3>箱から取り出しやすい個装</h3>
+        <p>個装箱の内側に持ち手付きの紙製インナーシートを採用。引き上げるだけで本体がスムーズに現れ、アクリル面への傷の心配を抑えてお取り出しいただけます。</p>
+      </figure>
+    </div>
   </section>
 
   <!-- スペック -->
